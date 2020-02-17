@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.5](https://github.com/conventional-changelog/conventional-changelog/compare/conventional-changelog-core@4.1.4...conventional-changelog-core@4.1.5) (2019-12-24)
+
+
+### Bug Fixes
+
+* **conventional-changelog-core:** check if HEAD ref exists before using it ([#578](https://github.com/conventional-changelog/conventional-changelog/issues/578)) ([dcb4b22](https://github.com/conventional-changelog/conventional-changelog/commit/dcb4b22970c4d15ab9c3fed97951dc2d38814982))
+
+
+
+
+
+## [4.1.4](https://github.com/conventional-changelog/conventional-changelog/compare/conventional-changelog-core@4.1.3...conventional-changelog-core@4.1.4) (2019-12-15)
+
+
+### Bug Fixes
+
+* **conventional-changelog-core:** fix duplicated commits when `from` is specified ([#573](https://github.com/conventional-changelog/conventional-changelog/issues/573)) ([f1feeab](https://github.com/conventional-changelog/conventional-changelog/commit/f1feeab86ed28f1e75c8f3a6b072c9dc18111c65)), closes [#567](https://github.com/conventional-changelog/conventional-changelog/issues/567)
+
+
+
+
+
+## [4.1.3](https://github.com/conventional-changelog/conventional-changelog/compare/conventional-changelog-core@4.1.2...conventional-changelog-core@4.1.3) (2019-11-27)
+
+
+### Bug Fixes
+
+* **conventional-changelog-core:** read current version properly when tagPrefix is provided ([5e7cc75](https://github.com/conventional-changelog/conventional-changelog/commit/5e7cc759cca4557f8ed3b48ed9d4dfb9c701785f)), closes [#562](https://github.com/conventional-changelog/conventional-changelog/issues/562) [#337](https://github.com/conventional-changelog/conventional-changelog/issues/337)
+
+
+
+
+
 ## [4.1.2](https://github.com/conventional-changelog/conventional-changelog/compare/conventional-changelog-core@4.1.1...conventional-changelog-core@4.1.2) (2019-11-21)
 
 
