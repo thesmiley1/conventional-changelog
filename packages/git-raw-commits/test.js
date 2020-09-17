@@ -75,7 +75,8 @@ describe('git-raw-commits', function () {
       }, function () {
         expect(i).to.equal(3)
         done()
-      })) })
+      }))
+  })
 
   it('should honour `options.from`', function (done) {
     var i = 0
@@ -199,7 +200,7 @@ describe('git-raw-commits', function () {
       }))
   })
 
-  it('should emit an error if git is not available', function(done) {
+  it('should emit an error if git is not available', function (done) {
     try {
       var path = process.env.PATH
       process.env.PATH = ''
@@ -215,7 +216,6 @@ describe('git-raw-commits', function () {
         }, function () {
           done('should error')
         }))
-
     } finally {
       process.env.PATH = path
     }
