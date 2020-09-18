@@ -55,7 +55,7 @@ function gitRawCommits (rawGitOpts, rawExecOpts) {
   var child = execFile('git', args, {
     cwd: execOpts.cwd,
     maxBuffer: Infinity
-  }, (err) => {
+  }, function (err) {
     if (err != null) {
       readable.emit('error', err)
     }
