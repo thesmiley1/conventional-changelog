@@ -199,7 +199,6 @@ describe('git-raw-commits', function () {
       gitRawCommits()
         .on('error', function (err) {
           expect(err).to.be.ok // eslint-disable-line no-unused-expressions
-          err.message = 'error message'
           done()
         })
         .pipe(through(function () {
