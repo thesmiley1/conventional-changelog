@@ -57,15 +57,12 @@ function gitRawCommits (rawGitOpts, rawExecOpts) {
   var child = execFile('git', args, {
     cwd: execOpts.cwd,
     maxBuffer: Infinity
-  }
-  , (err, stdout, stderr) => {
-    // console.log(`err: ${err}`)
+  }, (err, stdout, stderr) => {
     if (err != null) {
       readable.emit('error', err)
       readable.emit('close')
     }
-  }
-  )
+  })
 
   child.stdout
     .pipe(split(DELIMITER + '\n'))
@@ -84,13 +81,6 @@ function gitRawCommits (rawGitOpts, rawExecOpts) {
         cb()
       })
     }))
-
-  // child.stderr
-  //   .pipe(through.obj(function (chunk) {
-  //     isError = true
-  //     readable.emit('error', new Error(chunk))
-  //     readable.emit('close')
-  //   }))
 
   return readable
 }

@@ -23,22 +23,13 @@ describe('git-raw-commits', function () {
   it('should emit an error and the error should not be read only if there is no commits', function (done) {
     gitRawCommits()
       .on('error', function (err) {
-        // console.log('on error')
-        // console.log('foo')
-        // console.log('error: ' + err)
         expect(err).to.be.ok // eslint-disable-line no-unused-expressions
         err.message = 'error message'
         done()
       })
       .pipe(through(function () {
-        // console.log('first shoud error')
         done('should error')
-      }
-      // , function () {
-      //   console.log('second should error')
-      //   done('should error')
-      // }
-      ))
+      }))
   })
 
   it('should execute the command without error', function (done) {
