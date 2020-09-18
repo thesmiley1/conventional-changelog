@@ -58,8 +58,9 @@ function gitRawCommits (rawGitOpts, rawExecOpts) {
   }, (err) => {
     if (err != null) {
       readable.emit('error', err)
-      readable.emit('close')
     }
+
+    readable.emit('close')
   })
 
   child.stdout
@@ -71,7 +72,6 @@ function gitRawCommits (rawGitOpts, rawExecOpts) {
     }, function (cb) {
       setImmediate(function () {
         readable.push(null)
-        readable.emit('close')
 
         cb()
       })
